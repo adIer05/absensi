@@ -100,6 +100,16 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="1eVieEc465s" resolve="rekap_jumlah" />
     </node>
+    <node concept="1TJgyi" id="7ofPQmmWN4_" role="1TKVEl">
+      <property role="IQ2nx" value="8507255052450345253" />
+      <property role="TrG5h" value="nim" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7ofPQmmWN4A" role="1TKVEl">
+      <property role="IQ2nx" value="8507255052450345254" />
+      <property role="TrG5h" value="nama" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1eVieEc465s">
     <property role="EcuMT" value="1421810279574954332" />
