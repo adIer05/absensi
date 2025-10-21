@@ -41,7 +41,7 @@
     <ref role="1XX52x" to="ytz:7j9HDaGbwT$" resolve="Absensi" />
     <node concept="3EZMnI" id="1eVieEc49_F" role="2wV5jI">
       <node concept="3F0ifn" id="1eVieEc49_I" role="3EZMnx">
-        <property role="3F0ifm" value="&quot;absensi&quot;" />
+        <property role="3F0ifm" value="absensi" />
       </node>
       <node concept="l2Vlx" id="1eVieEc49_H" role="2iSdaV" />
       <node concept="3F0A7n" id="1eVieEc49_N" role="3EZMnx">
@@ -75,7 +75,7 @@
         <ref role="1NtTu8" to="ytz:1eVieEc465w" resolve="nama" />
       </node>
       <node concept="3F0ifn" id="1eVieEc49$O" role="3EZMnx">
-        <property role="3F0ifm" value="&quot;:&quot;" />
+        <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F0A7n" id="1eVieEc49$U" role="3EZMnx">
         <ref role="1NtTu8" to="ytz:1eVieEc465x" resolve="jumlah" />
@@ -93,7 +93,7 @@
       </node>
       <node concept="l2Vlx" id="1eVieEc49_4" role="2iSdaV" />
       <node concept="3F0ifn" id="1eVieEc49_a" role="3EZMnx">
-        <property role="3F0ifm" value="&quot;:&quot;" />
+        <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F0A7n" id="1eVieEc49_f" role="3EZMnx">
         <ref role="1NtTu8" to="ytz:1eVieEc465M" resolve="status" />
@@ -104,14 +104,14 @@
     <ref role="1XX52x" to="ytz:1eVieEc465$" resolve="matkul_attribute" />
     <node concept="3EZMnI" id="1eVieEc49_m" role="2wV5jI">
       <node concept="3F0ifn" id="1eVieEc49_p" role="3EZMnx">
-        <property role="3F0ifm" value="&quot;sks:&quot;" />
+        <property role="3F0ifm" value="sks:" />
       </node>
       <node concept="l2Vlx" id="1eVieEc49_o" role="2iSdaV" />
       <node concept="3F0A7n" id="1eVieEc49_u" role="3EZMnx">
         <ref role="1NtTu8" to="ytz:1eVieEc465I" resolve="sks" />
       </node>
       <node concept="3F0ifn" id="1eVieEc49_x" role="3EZMnx">
-        <property role="3F0ifm" value="&quot;jadwal:&quot;" />
+        <property role="3F0ifm" value="jadwal:" />
       </node>
       <node concept="3F0A7n" id="1eVieEc49_A" role="3EZMnx">
         <ref role="1NtTu8" to="ytz:1eVieEc465J" resolve="jadwal" />
