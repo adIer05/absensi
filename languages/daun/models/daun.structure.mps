@@ -78,7 +78,7 @@
   </node>
   <node concept="1TIwiD" id="1eVieEc465l">
     <property role="EcuMT" value="1421810279574954325" />
-    <property role="TrG5h" value="program" />
+    <property role="TrG5h" value="Program" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1eVieEc465o" role="1TKVEi">
