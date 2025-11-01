@@ -56,7 +56,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "\"sks:\"");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "sks:");
     editorCell.setCellId("Constant_r91zc6_a0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -83,7 +83,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createConstant_1() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "\"jadwal:\"");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "jadwal:");
     editorCell.setCellId("Constant_r91zc6_c0");
     editorCell.setDefaultText("");
     return editorCell;

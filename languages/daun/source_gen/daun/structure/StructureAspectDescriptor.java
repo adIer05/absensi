@@ -86,9 +86,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:81b43fd3-33f7-4873-a178-a8e9d6193b1e(daun.structure)/8415458119788662372");
     b.version(3);
     b.property("id", 0x13bb48ea8c10615dL).type(PrimitiveTypeId.STRING).origin("1421810279574954333").done();
+    b.associate("mata_kuliah", 0x759cf73de038d5c5L).target(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c106163L).optional(false).origin("8474920443931317701").done();
+    b.associate("status", 0x759cf73de038d5c6L).target(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c106165L).optional(false).origin("8474920443931317702").done();
     b.aggregate("Mahasiswa", 0x13bb48ea8c10615eL).target(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c10615bL).optional(false).ordered(true).multiple(true).origin("1421810279574954334").done();
-    b.aggregate("mata_kuliah", 0x13bb48ea8c109969L).target(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c106163L).optional(false).ordered(true).multiple(true).origin("1421810279574968681").done();
-    b.aggregate("status", 0x13bb48ea8c10996aL).target(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c106165L).optional(false).ordered(true).multiple(true).origin("1421810279574968682").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForData_Matkul() {
@@ -138,6 +138,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:81b43fd3-33f7-4873-a178-a8e9d6193b1e(daun.structure)/1421810279574954331");
     b.version(3);
+    b.property("nim", 0x760fd76596f33125L).type(PrimitiveTypeId.STRING).origin("8507255052450345253").done();
+    b.property("nama", 0x760fd76596f33126L).type(PrimitiveTypeId.STRING).origin("8507255052450345254").done();
+    b.property("id", 0x9ba1c64c1bb648fL).type(PrimitiveTypeId.STRING).origin("700903911082124431").done();
     b.aggregate("list_rekap", 0x13bb48ea8c10615fL).target(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c10615cL).optional(false).ordered(true).multiple(true).origin("1421810279574954335").done();
     return b.create();
   }

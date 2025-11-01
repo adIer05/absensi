@@ -5,24 +5,92 @@ package daun.behavior;
 import jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import java.util.List;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
+import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
+import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
+import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import org.jetbrains.mps.openapi.model.SNode;
+import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
+import org.jetbrains.mps.openapi.language.SProperty;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public final class Absensi__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x74c9b692ac2e0e64L, "daun.structure.Absensi");
 
+  public static final SMethod<String> getId_id7ofPQmmVxsM = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8507255052450010930L).languageId(0x8ed5b8e28497bd10L, 0x26ef42d6083d44d9L).build2();
+  public static final SMethod<Void> setId_id7ofPQmmVxNo = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8507255052450012376L).languageId(0x8ed5b8e28497bd10L, 0x26ef42d6083d44d9L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Iterable<SNode>> getMahasiswaList_idAU76j1IC2i = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getMahasiswaList").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(700903911082066066L).languageId(0x8ed5b8e28497bd10L, 0x26ef42d6083d44d9L).build2();
+  public static final SMethod<Void> addMahasiswa_idAU76j1IDxC = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addMahasiswa").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(700903911082072168L).languageId(0x8ed5b8e28497bd10L, 0x26ef42d6083d44d9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> removeMahasiswaById_idAU76j1ILma = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("removeMahasiswaById").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(700903911082104202L).languageId(0x8ed5b8e28497bd10L, 0x26ef42d6083d44d9L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Integer> getJumlahMahasiswa_id7ofPQmmVSTP = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getJumlahMahasiswa").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8507255052450106997L).languageId(0x8ed5b8e28497bd10L, 0x26ef42d6083d44d9L).build2();
+  public static final SMethod<SNode> findMahasiswaByName_id7ofPQmmVZcw = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("findMahasiswaByName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8507255052450132768L).languageId(0x8ed5b8e28497bd10L, 0x26ef42d6083d44d9L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Boolean> containsMahasiswa_idAU76j1J3Ks = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("containsMahasiswa").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(700903911082179612L).languageId(0x8ed5b8e28497bd10L, 0x26ef42d6083d44d9L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> toString_id7ofPQmmW8Rt = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("toString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8507255052450172381L).languageId(0x8ed5b8e28497bd10L, 0x26ef42d6083d44d9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getId_id7ofPQmmVxsM, setId_id7ofPQmmVxNo, getMahasiswaList_idAU76j1IC2i, addMahasiswa_idAU76j1IDxC, removeMahasiswaById_idAU76j1ILma, getJumlahMahasiswa_id7ofPQmmVSTP, findMahasiswaByName_id7ofPQmmVZcw, containsMahasiswa_idAU76j1J3Ks, toString_id7ofPQmmW8Rt);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
+  /*package*/ static String getId_id7ofPQmmVxsM(@NotNull SNode __thisNode__) {
+    return SPropertyOperations.getString(__thisNode__, PROPS.id$7IcH);
+  }
+  /*package*/ static void setId_id7ofPQmmVxNo(@NotNull SNode __thisNode__, String newId) {
+    SPropertyOperations.assign(__thisNode__, PROPS.id$7IcH, newId);
+  }
+  /*package*/ static Iterable<SNode> getMahasiswaList_idAU76j1IC2i(@NotNull SNode __thisNode__) {
+    return SLinkOperations.getChildren(__thisNode__, LINKS.Mahasiswa$7IrI);
+  }
+  /*package*/ static void addMahasiswa_idAU76j1IDxC(@NotNull SNode __thisNode__, SNode m) {
+    ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.Mahasiswa$7IrI)).addElement(m);
+  }
+  /*package*/ static void removeMahasiswaById_idAU76j1ILma(@NotNull SNode __thisNode__, String mhsId) {
+    SNode toRemove = null;
+    for (SNode m : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.Mahasiswa$7IrI))) {
+      if (SPropertyOperations.getString(m, PROPS.id$oiBp).equals(mhsId)) {
+        toRemove = m;
+        break;
+      }
+    }
+    if (toRemove != null) {
+      ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.Mahasiswa$7IrI)).removeElement(toRemove);
+    }
+  }
+  /*package*/ static int getJumlahMahasiswa_id7ofPQmmVSTP(@NotNull SNode __thisNode__) {
+    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.Mahasiswa$7IrI)).count();
+  }
+  /*package*/ static SNode findMahasiswaByName_id7ofPQmmVZcw(@NotNull SNode __thisNode__, String nama) {
+    for (SNode m : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.Mahasiswa$7IrI))) {
+      if (SPropertyOperations.getString(m, PROPS.nama$KMxh) == nama) {
+        return m;
+      }
+    }
+    return null;
+  }
+  /*package*/ static boolean containsMahasiswa_idAU76j1J3Ks(@NotNull SNode __thisNode__, String nama) {
+    for (SNode m : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.Mahasiswa$7IrI))) {
+      if (SPropertyOperations.getString(m, PROPS.nama$KMxh) == nama) {
+        return true;
+      }
+    }
+    return false;
+  }
+  /*package*/ static String toString_id7ofPQmmW8Rt(@NotNull SNode __thisNode__) {
+    String result = "Absensi ID: " + SPropertyOperations.getString(__thisNode__, PROPS.id$7IcH) + "\n";
+    result = result + "Daftar Mahasiswa: \n";
+    for (SNode m : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.Mahasiswa$7IrI))) {
+      result = result + "-" + SPropertyOperations.getString(m, PROPS.nama$KMxh) + "\n";
+    }
+    return result;
+  }
 
   /*package*/ Absensi__BehaviorDescriptor() {
   }
@@ -39,6 +107,27 @@ public final class Absensi__BehaviorDescriptor extends BaseBHDescriptor {
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
+      case 0:
+        return (T) ((String) getId_id7ofPQmmVxsM(node));
+      case 1:
+        setId_id7ofPQmmVxNo(node, (String) parameters[0]);
+        return null;
+      case 2:
+        return (T) ((Iterable<SNode>) getMahasiswaList_idAU76j1IC2i(node));
+      case 3:
+        addMahasiswa_idAU76j1IDxC(node, (SNode) parameters[0]);
+        return null;
+      case 4:
+        removeMahasiswaById_idAU76j1ILma(node, (String) parameters[0]);
+        return null;
+      case 5:
+        return (T) ((Integer) getJumlahMahasiswa_id7ofPQmmVSTP(node));
+      case 6:
+        return (T) ((SNode) findMahasiswaByName_id7ofPQmmVZcw(node, (String) parameters[0]));
+      case 7:
+        return (T) ((Boolean) containsMahasiswa_idAU76j1J3Ks(node, (String) parameters[0]));
+      case 8:
+        return (T) ((String) toString_id7ofPQmmW8Rt(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -66,5 +155,15 @@ public final class Absensi__BehaviorDescriptor extends BaseBHDescriptor {
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty id$7IcH = MetaAdapterFactory.getProperty(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x74c9b692ac2e0e64L, 0x13bb48ea8c10615dL, "id");
+    /*package*/ static final SProperty id$oiBp = MetaAdapterFactory.getProperty(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c10615bL, 0x9ba1c64c1bb648fL, "id");
+    /*package*/ static final SProperty nama$KMxh = MetaAdapterFactory.getProperty(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c10615bL, 0x760fd76596f33126L, "nama");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink Mahasiswa$7IrI = MetaAdapterFactory.getContainmentLink(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x74c9b692ac2e0e64L, 0x13bb48ea8c10615eL, "Mahasiswa");
   }
 }

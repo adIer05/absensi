@@ -4,15 +4,63 @@ package daun.constraints;
 
 import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsDescriptorInitContext;
+import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
+import jetbrains.mps.smodel.runtime.ConstraintsDescriptor;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.smodel.runtime.CheckingNodeContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.SNodePointer;
+import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SProperty;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public class Absensi_Constraints extends BaseConstraintsDescriptor {
   /*package*/ Absensi_Constraints(ConstraintsDescriptorInitContext initContext) {
     super(CONCEPTS.Absensi$6x, initContext);
+    record(new Id_PD(this));
+    record(new RD1(this));
+    record(new RD2(this));
+  }
+
+  /*package*/ static final class Id_PD extends BasePropertyConstraintsDescriptor {
+    public Id_PD(ConstraintsDescriptor container) {
+      super(PROPS.id$7IcH, container, false, false, true);
+    }
+    @Override
+    public boolean validateValue(SNode node, Object propertyValue, CheckingNodeContext checkingNodeContext) {
+      boolean result = staticValidateProperty(node, SPropertyOperations.castString(propertyValue));
+      if (!(result) && checkingNodeContext != null) {
+        checkingNodeContext.setBreakingNode(new SNodePointer("r:4622b345-71d3-4187-85ee-4636b8123d49(daun.constraints)", "8507255052449807033"));
+      }
+      return result;
+    }
+    private static boolean staticValidateProperty(SNode node, String propertyValue) {
+      return propertyValue != null && propertyValue != "";
+    }
+  }
+  /*package*/ static final class RD1 extends BaseReferenceConstraintsDescriptor {
+    /*package*/ RD1(ConstraintsDescriptor container) {
+      super(LINKS.mata_kuliah$Gcr0, container, false, false);
+    }
+  }
+  /*package*/ static final class RD2 extends BaseReferenceConstraintsDescriptor {
+    /*package*/ RD2(ConstraintsDescriptor container) {
+      super(LINKS.status$GcE1, container, false, false);
+    }
   }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Absensi$6x = MetaAdapterFactory.getConcept(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x74c9b692ac2e0e64L, "daun.structure.Absensi");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty id$7IcH = MetaAdapterFactory.getProperty(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x74c9b692ac2e0e64L, 0x13bb48ea8c10615dL, "id");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SReferenceLink mata_kuliah$Gcr0 = MetaAdapterFactory.getReferenceLink(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x74c9b692ac2e0e64L, 0x759cf73de038d5c5L, "mata_kuliah");
+    /*package*/ static final SReferenceLink status$GcE1 = MetaAdapterFactory.getReferenceLink(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x74c9b692ac2e0e64L, 0x759cf73de038d5c6L, "status");
   }
 }

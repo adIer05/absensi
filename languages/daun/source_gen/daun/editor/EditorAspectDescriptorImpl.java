@@ -22,8 +22,10 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 1:
         return Collections.<ConceptEditor>singletonList(new Status_Data_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new matkul_attribute_Editor());
+        return Collections.<ConceptEditor>singletonList(new mahasiswa_Editor());
       case 3:
+        return Collections.<ConceptEditor>singletonList(new matkul_attribute_Editor());
+      case 4:
         return Collections.<ConceptEditor>singletonList(new rekap_jumlah_Editor());
       default:
     }
@@ -32,5 +34,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
 
 
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x74c9b692ac2e0e64L), MetaIdFactory.conceptId(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c106166L), MetaIdFactory.conceptId(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c106164L), MetaIdFactory.conceptId(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c10615cL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x74c9b692ac2e0e64L), MetaIdFactory.conceptId(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c106166L), MetaIdFactory.conceptId(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c10615bL), MetaIdFactory.conceptId(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c106164L), MetaIdFactory.conceptId(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c10615cL)).seal();
 }
