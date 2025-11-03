@@ -28,10 +28,6 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
-      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
-        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
-      </concept>
-      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -46,6 +42,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ngI" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -83,13 +80,8 @@
         </node>
         <node concept="3EZMnI" id="7msXNRweerv" role="3EZMnx">
           <node concept="2iRkQZ" id="7msXNRweerw" role="2iSdaV" />
-          <node concept="1iCGBv" id="7msXNRweerH" role="3EZMnx">
-            <ref role="1NtTu8" to="ytz:7msXNRwedn5" resolve="mata_kuliah" />
-            <node concept="1sVBvm" id="7msXNRweerJ" role="1sWHZn">
-              <node concept="3F2HdR" id="7msXNRweerP" role="2wV5jI">
-                <ref role="1NtTu8" to="ytz:1eVieEc465D" resolve="list_matkul" />
-              </node>
-            </node>
+          <node concept="3F1sOY" id="4M1KIEs0kvp" role="3EZMnx">
+            <ref role="1NtTu8" to="ytz:4M1KIEs0kiT" resolve="mata_kuliah" />
           </node>
         </node>
         <node concept="3F0ifn" id="7msXNRweerS" role="3EZMnx">
@@ -97,17 +89,8 @@
         </node>
         <node concept="3EZMnI" id="7msXNRweerV" role="3EZMnx">
           <node concept="2iRkQZ" id="7msXNRweerW" role="2iSdaV" />
-          <node concept="3EZMnI" id="7msXNRwees8" role="3EZMnx">
-            <node concept="VPM3Z" id="7msXNRwees9" role="3F10Kt" />
-            <node concept="2iRkQZ" id="7msXNRweesa" role="2iSdaV" />
-            <node concept="1iCGBv" id="7msXNRweesb" role="3EZMnx">
-              <ref role="1NtTu8" to="ytz:7msXNRwedn6" resolve="status" />
-              <node concept="1sVBvm" id="7msXNRweesc" role="1sWHZn">
-                <node concept="3F2HdR" id="7msXNRweese" role="2wV5jI">
-                  <ref role="1NtTu8" to="ytz:1eVieEc465K" resolve="list_data_status" />
-                </node>
-              </node>
-            </node>
+          <node concept="3F1sOY" id="4M1KIEs0kvr" role="3EZMnx">
+            <ref role="1NtTu8" to="ytz:4M1KIEs0kiU" resolve="status" />
           </node>
         </node>
       </node>

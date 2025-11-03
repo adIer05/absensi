@@ -61,16 +61,16 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="1eVieEc465r" resolve="mahasiswa" />
     </node>
-    <node concept="1TJgyj" id="7msXNRwedn5" role="1TKVEi">
-      <property role="IQ2ns" value="8474920443931317701" />
+    <node concept="1TJgyj" id="4M1KIEs0kiT" role="1TKVEi">
+      <property role="IQ2ns" value="5512901731773662393" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="mata_kuliah" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1eVieEc465z" resolve="Matkul" />
     </node>
-    <node concept="1TJgyj" id="7msXNRwedn6" role="1TKVEi">
-      <property role="IQ2ns" value="8474920443931317702" />
+    <node concept="1TJgyj" id="4M1KIEs0kiU" role="1TKVEi">
+      <property role="IQ2ns" value="5512901731773662394" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="status" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1eVieEc465_" resolve="Status" />
     </node>
   </node>

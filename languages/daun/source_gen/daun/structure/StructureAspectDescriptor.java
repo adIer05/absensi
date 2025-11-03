@@ -86,9 +86,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:81b43fd3-33f7-4873-a178-a8e9d6193b1e(daun.structure)/8415458119788662372");
     b.version(3);
     b.property("id", 0x13bb48ea8c10615dL).type(PrimitiveTypeId.STRING).origin("1421810279574954333").done();
-    b.associate("mata_kuliah", 0x759cf73de038d5c5L).target(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c106163L).optional(false).origin("8474920443931317701").done();
-    b.associate("status", 0x759cf73de038d5c6L).target(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c106165L).optional(false).origin("8474920443931317702").done();
     b.aggregate("Mahasiswa", 0x13bb48ea8c10615eL).target(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c10615bL).optional(false).ordered(true).multiple(true).origin("1421810279574954334").done();
+    b.aggregate("mata_kuliah", 0x4c81c2ea9c0144b9L).target(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c106163L).optional(true).ordered(true).multiple(false).origin("5512901731773662393").done();
+    b.aggregate("status", 0x4c81c2ea9c0144baL).target(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c106165L).optional(true).ordered(true).multiple(false).origin("5512901731773662394").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForData_Matkul() {

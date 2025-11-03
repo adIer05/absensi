@@ -6,8 +6,9 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="off" classes="off" ext="no">
-      <classes generated="true" />
+    <facet type="java" compile="mps" classes="mps" ext="no" languageLevel="JAVA_10">
+      <classes generated="true" path="${module}" />
+      <source location="${module}/source_gen" />
     </facet>
   </facets>
   <languageVersions>
