@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/daun.runtime/daun.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/daun.sandbox/daun.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/daun/daun.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/daun.sandbox/daun.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>

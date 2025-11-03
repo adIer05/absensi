@@ -55,10 +55,6 @@
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213098023997" name="property" index="1MhHOB" />
-        <child id="1213100494875" name="referent" index="1Mr941" />
-      </concept>
-      <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
-        <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
       </concept>
       <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
     </language>
@@ -83,12 +79,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="1N5Pfh" id="7msXNRweJ4e" role="1Mr941">
-      <ref role="1N5Vy1" to="ytz:7msXNRwedn5" resolve="mata_kuliah" />
-    </node>
-    <node concept="1N5Pfh" id="7ofPQmmV3b5" role="1Mr941">
-      <ref role="1N5Vy1" to="ytz:7msXNRwedn6" resolve="status" />
     </node>
   </node>
   <node concept="1M2fIO" id="7ofPQmmUWwR">

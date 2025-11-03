@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:07d539d9-1f1f-4139-a45e-594873b54f28(daun.sandbox)">
+<model ref="r:cb4938d8-648d-4045-9c5d-4a89007377bd(daun.sandbox)">
   <persistence version="9" />
   <languages>
+    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="26ef42d6-083d-44d9-8ed5-b8e28497bd10" name="daun" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
-  <imports />
+  <imports>
+    <import index="3ozl" ref="r:e8bbd0d0-0dc1-4ddc-8037-f6bab38eeef7(daun.runtime)" />
+    <import index="tpcv" ref="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+  </imports>
   <registry>
     <language id="26ef42d6-083d-44d9-8ed5-b8e28497bd10" name="daun">
       <concept id="1421810279574954346" name="daun.structure.Data_Matkul" flags="ng" index="2vEMA0">
@@ -47,32 +55,32 @@
       </concept>
     </language>
   </registry>
-  <node concept="2vEMAZ" id="4M1KIEs7T7X">
-    <node concept="3oTVzQ" id="4M1KIEs7T7Y" role="2vEMAM">
-      <property role="2vEMAR" value="22222" />
-      <node concept="2vEMAL" id="4M1KIEs7T7Z" role="2vEMAO">
-        <property role="3wZep0" value="241524061" />
-        <property role="3wZep3" value="Shofiana Winocita" />
-        <property role="380nzF" value="123456" />
-        <node concept="2vEMAQ" id="4M1KIEs7T80" role="2vEMAP">
-          <property role="2vEMAa" value="Shofiana Winocita" />
-          <property role="2vEMAb" value="1" />
+  <node concept="2vEMAZ" id="10AlXHPp70C">
+    <node concept="3oTVzQ" id="10AlXHPp70D" role="2vEMAM">
+      <property role="2vEMAR" value="12345" />
+      <node concept="2vEMAL" id="10AlXHPp70E" role="2vEMAO">
+        <property role="3wZep0" value="11111" />
+        <property role="3wZep3" value="sadasjd" />
+        <property role="380nzF" value="12312" />
+        <node concept="2vEMAQ" id="10AlXHPp70F" role="2vEMAP">
+          <property role="2vEMAa" value="sadasjd" />
+          <property role="2vEMAb" value="4" />
           <property role="2vEMA8" value="1eVieEc4661/jam" />
         </node>
       </node>
-      <node concept="2vEMA9" id="4M1KIEs7T9p" role="3gw8pj">
-        <node concept="2vEMA0" id="4M1KIEs7T9q" role="2vEMA3">
-          <property role="2vEMA6" value="SDA" />
-          <node concept="2vEMAe" id="4M1KIEs7T9r" role="2vEMA7">
+      <node concept="2vEMA9" id="10AlXHPp7SE" role="3gw8pj">
+        <node concept="2vEMA0" id="10AlXHPp7SF" role="2vEMA3">
+          <property role="2vEMA6" value="sda" />
+          <node concept="2vEMAe" id="10AlXHPp7SG" role="2vEMA7">
             <property role="2vEMA4" value="4" />
-            <property role="2vEMA5" value="Senin" />
+            <property role="2vEMA5" value="selasa" />
           </node>
         </node>
       </node>
-      <node concept="2vEMAf" id="4M1KIEs7Ta0" role="3gw8pg">
-        <node concept="2vEMAc" id="4M1KIEs7Ta1" role="2vEMAq">
-          <property role="2vEMAr" value="Shofiana" />
-          <property role="2vEMAo" value="1eVieEc465V/IZIN" />
+      <node concept="2vEMAf" id="10AlXHPp7SH" role="3gw8pg">
+        <node concept="2vEMAc" id="10AlXHPp7SI" role="2vEMAq">
+          <property role="2vEMAr" value="sadasjd" />
+          <property role="2vEMAo" value="1eVieEc465Y/ALFA" />
         </node>
       </node>
     </node>
