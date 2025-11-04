@@ -54,8 +54,14 @@
         <child id="5512901731773662393" name="mata_kuliah" index="3gw8pj" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
   </registry>
   <node concept="2vEMAZ" id="10AlXHPp70C">
+    <property role="TrG5h" value="absensi" />
     <node concept="3oTVzQ" id="10AlXHPp70D" role="2vEMAM">
       <property role="2vEMAR" value="12345" />
       <node concept="2vEMAL" id="10AlXHPp70E" role="2vEMAO">

@@ -37,6 +37,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
+    deps.extendedLanguage(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, "jetbrains.mps.execution.util");
   }
 
   @Override
@@ -111,6 +112,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForProgram() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("daun", "Program", 0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x13bb48ea8c106155L);
     b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
     b.origin("r:81b43fd3-33f7-4873-a178-a8e9d6193b1e(daun.structure)/1421810279574954325");
     b.version(3);
     b.aggregate("absensi_list", 0x13bb48ea8c106158L).target(0x26ef42d6083d44d9L, 0x8ed5b8e28497bd10L, 0x74c9b692ac2e0e64L).optional(false).ordered(true).multiple(true).origin("1421810279574954328").done();

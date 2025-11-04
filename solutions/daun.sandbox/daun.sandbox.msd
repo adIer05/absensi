@@ -6,13 +6,13 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="no">
+    <facet type="java" compile="mps" classes="off" ext="no" languageLevel="JAVA_10">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
   <dependencies>
     <dependency reexport="true">26ef42d6-083d-44d9-8ed5-b8e28497bd10(daun)</dependency>
-    <dependency reexport="false">8b05614f-9440-4755-8b9f-fd1fb9b37889(daun.runtime)</dependency>
+    <dependency reexport="true">8b05614f-9440-4755-8b9f-fd1fb9b37889(daun.runtime)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:26ef42d6-083d-44d9-8ed5-b8e28497bd10:daun" version="0" />
